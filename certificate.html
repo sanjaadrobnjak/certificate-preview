@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Achievement</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .certificate-container {
+            background-color: white;
+            border: 15px solid #232f3e;
+            padding: 50px;
+            width: 800px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .certificate-border {
+            border: 2px solid #fac204;
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #232f3e;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .recipient {
+            font-size: 28px;
+            margin: 40px 0;
+            color: #1a5276;
+            font-weight: bold;
+        }
+        
+        .achievement {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .signature-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        
+        .signature {
+            width: 200px;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+        
+        .date {
+            margin-top: 30px;
+            font-style: italic;
+        }
+        
+        .buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-linkedin {
+            background-color: #0077b5;
+            color: white;
+        }
+        
+        .btn-linkedin:hover {
+            background-color: #005582;
+        }
+        
+        .btn-main {
+            background-color: #1a5276;
+            color: white;
+        }
+        
+        .btn-main:hover {
+            background-color: #0e3a5a;
+        }
+        
+        .seal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            opacity: 0.7;
+        }
+        
+        @media print {
+            .buttons {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">        
+        <div class="certificate-border">
+            <h1>CERTIFICATE OF ACHIEVEMENT</h1>
+            <div class="subtitle">This certificate is proudly presented to</div>
+            
+            <div class="recipient" id="recipientName">Supply Chain Learner</div>
+            
+            <div class="achievement">
+                For outstanding performance and dedication in successfully completing the <strong>Supply Chain Apps Basic Certificate</strong>
+            </div>
+            
+            <div class="date">
+                Awarded on: <span id="awardDate">7/7/2025</span>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
